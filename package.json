@@ -20,7 +20,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scraper": "node src/utils/scraper.mjs"
+    "scraper": "node src/utils/scraper.mjs",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +48,7 @@
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
+    "eslint-config-airbnb-typescript": "^17.0.0",
     "typescript": "^4.7.4"
   }
 }
