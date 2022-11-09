@@ -8,6 +8,7 @@ import { CharacterTableContext, SearchContext, TagsContext } from './context'
 import jsonData from './data/characters.json'
 import { useFilter, useTags } from './hooks'
 import useCharacterSelect from './hooks/useCharacterSelect'
+import logo from './img/Mortal-Kombat-Logo.png'
 import { Character } from './types'
 function App() {
   const [searchKey, setSearchKey] = useState("")
@@ -42,7 +43,8 @@ function App() {
   // const { filteredData } = useFilteredList()
   return (
     <div className="App">
-      <header><h2>Select your squad to defend earthrealm</h2></header>
+      <img src={logo} width={160} height={90} alt="logo" />
+      <header><h2>{checkedCharacters.length === 0 ? 'Select your squad to defend earthrealm' : 'Your Champions!'}</h2></header>
       <CharacterTableContext.Provider value={{ checkedCharacters, filteredCharacters, setCheckedCharacters }}>
 
         <ChampionsBar />
