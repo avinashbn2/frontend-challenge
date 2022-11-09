@@ -24,7 +24,7 @@ function Hoverable({ image, onRemove }: HoverableProps) {
 
                     !isHovering ?
                         <CharImage width={80} height={80} image={image} />
-                        : <div onClick={onRemove} style={{ cursor: 'pointer', background: "red", position: 'relative' }}>
+                        : <div onClick={onRemove} style={{ borderRadius: '50%', cursor: 'pointer', background: "red", position: 'relative' }}>
                             <>
                                 <div style={{ color: 'white', position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%' }}>
                                     Remove
