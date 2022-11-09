@@ -27,11 +27,13 @@ function CharacterTable({ onClick, checkedCharacters, filteredCharacters }: Char
                 <Row.Item span={2}></Row.Item>
                 <Row.Item span={3}><h5>Character</h5></Row.Item>
                 <Row.Item span={2}><h5>Tags</h5></Row.Item>
-                <Row.Item span={1}><h5>Power</h5></Row.Item>
                 <Row.Item span={1}><h5>Mobility</h5></Row.Item>
                 <Row.Item span={1}><h5>Technique</h5></Row.Item>
                 <Row.Item span={1}><h5>Survivability</h5></Row.Item>
+                <Row.Item span={1}><h5>Power</h5></Row.Item>
                 <Row.Item span={1}><h5>Energy</h5></Row.Item>
+
+
             </Row>
 
             <div className={classes.characterRows}>
