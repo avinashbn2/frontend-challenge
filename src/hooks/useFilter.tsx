@@ -37,7 +37,6 @@ function useFilter(characterData: Character[], searchKey: string, selectedTags: 
                 }
                 return flag
             })
-            console.log('characters', characters)
 
             setFilteredCharacters(characters)
         }

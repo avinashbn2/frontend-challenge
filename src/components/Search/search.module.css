@@ -1,7 +1,10 @@
+@import '../../vars.css';
 .search {
     outline: none;
-    border: 3px solid black;
-    border-radius: 4px;
-    width: 100%;
-    padding: 2px;
+    border: 3px solid var(--color-primary);
+    border-radius: 8px;
+    width: 300px;
+    padding: 8px;
+    margin: 24px;
+
 }

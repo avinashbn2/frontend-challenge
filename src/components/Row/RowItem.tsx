@@ -1,6 +1,6 @@
 import classes from './row.module.css';
 type RowItemProps = {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     span?: number;
 }
 

@@ -6,7 +6,7 @@ type SearchProps = {
 }
 function Search({ searchKey, onChange }: SearchProps) {
     return (
-        <input type="text" value={searchKey} className={classes.search} onChange={onChange} />
+        <input type="text" value={searchKey} placeholder="Search ..." className={classes.search} onChange={onChange} />
     )
 }
 

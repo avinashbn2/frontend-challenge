@@ -9,7 +9,6 @@ type TagBadgeProps = {
 function TagBadge({ value, selected, onClick }: TagBadgeProps) {
     const handleClick = () => {
         if (onClick) {
-
             onClick(value)
         }
     }
