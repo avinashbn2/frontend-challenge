@@ -37,11 +37,14 @@ function CharacterTable({ onClick, checkedCharacters, filteredCharacters }: Char
             </Row>
 
             <div className={classes.characterRows}>
-                {
+                {filteredCharacters.length > 0 ?
                     filteredCharacters.map((char: Character) => <CharacterRow disabled={checkedCharacters.length >= 6} key={char.id} character={char} checked={checkedCharacters.includes(char.name)} onClick={() => {
                         onClick(char.name)
-                    }}></CharacterRow>)
+                    }}
+                    ></CharacterRow>)
+                    : <h2>No Characters found matching the search key or tags!</h2>
                 }
+
             </div>
         </div >
 

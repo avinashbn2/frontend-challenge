@@ -8,7 +8,7 @@ import { Character } from "../../types";
 import classes from './championsBar.module.css';
 import Hoverable from "./Hoverable";
 function ChampionsBar() {
-    const { checkedCharacters, filteredCharacters, setCheckedCharacters } = useContext(CharacterTableContext)
+    const { checkedCharacters, setCheckedCharacters } = useContext(CharacterTableContext)
     const selectedCharData = useSelectedCharacters(checkedCharacters, jsonData as Array<Character>)
     const average = useChampionsAverage(selectedCharData)
     // eslint-disable-next-line react-hooks/exhaustive-deps
